@@ -1,0 +1,21 @@
+.niconico-darkmode-setting-true {
+    #header_block {
+        #header {
+            background: none !important;
+            background-color: $main-background-color !important;
+
+            #logo img {
+                filter: invert(1) !important;
+            }
+
+            .sg_global_bar {
+                background-color: $main-background-color !important;
+                .sg_pankuzu li {
+                    span {
+                        color: $sub-1-text-color !important;
+                    }
+                }
+            }
+        }
+    }
+}

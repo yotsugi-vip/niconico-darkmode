@@ -1,0 +1,100 @@
+@import "../parts/_default";
+@import "../parts/_textarea";
+@import "../parts/_footer";
+@import "./header";
+@import "./search";
+@import "./pankuzu";
+@import "./footer";
+
+.niconico-darkmode-setting-true {
+    #content {
+        .popular_tag_bg {
+            background-color: $main-background-color !important;
+        }
+
+        /** お知らせ */
+        .info_box {
+            .bar_title {
+                h2 {
+                    color: $main-text-color !important;
+                    text-shadow: none !important;
+                }
+            }
+            .info_box_inner {
+                .info_list_wrapper {
+                    background-color: $sub-background-color !important;
+                    a {
+                        color: $main-url-color !important;
+                    }
+                }
+            }
+        }
+
+        /** 急上昇イラスト */
+        /** 新着イラスト */
+        .box {
+            .bar_title {
+                h2 {
+                    color: $main-text-color !important;
+                    text-shadow: none !important;
+                }
+            }
+            .illust_list {
+                .item_list {
+                    .list_item {
+                        background-color: $sub-background-color !important;
+                        a {
+                            background-color: $sub-background-color !important;
+                            .title {
+                                color: $sub-1-text-color !important;
+                            }
+                            .user {
+                                color: $sub-2-text-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /** 人気のイラスト */
+        .rank_box {
+            .bar_title {
+                h2 {
+                    color: $main-text-color !important;
+                    text-shadow: none !important;
+                }
+            }
+            .rank_innerbox {
+                background-color: $sub-background-color !important;
+                .create,
+                .fan,
+                .hall {
+                    .more_link {
+                        a {
+                            color: #000 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        /** タグ一覧 */
+        .tag_list_box {
+            .bar_title {
+                h2 {
+                    color: $main-text-color !important;
+                    text-shadow: none !important;
+                }
+            }
+            .top_illust_tag {
+                background-color: $sub-background-color !important;
+            }
+        }
+    }
+
+    .level_ad {
+        background-color: $main-background-color !important;
+        border-color: $main-background-color !important;
+    }
+}

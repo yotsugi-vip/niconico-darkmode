@@ -1,0 +1,146 @@
+@import "../parts/_default";
+@import "../parts/_textarea";
+@import "../parts/_footer";
+@import "./header";
+@import "./search";
+@import "./pankuzu";
+@import "./footer";
+
+.niconico-darkmode-setting-true {
+  background-color: $main-background-color !important;
+  /** メインコンテンツ */
+  #main {
+    #content {
+      background-color: $main-background-color !important;
+
+      #main_area_l {
+        /** お知らせ */
+        #top_news_box {
+          .top_news_block {
+            .top_news_block__title {
+              background: none !important;
+              background-color: $sub-background-color !important;
+              h2 {
+                color: $main-text-color !important;
+              }
+            }
+            .top_news_block__itemlist {
+              background: none !important;
+              .top_news_block__item {
+                background-color: $sub-background-color !important;
+                .top_news_block__item__date {
+                  color: $main-text-color !important;
+                }
+                .top_news_block__item__title a {
+                  color: $main-text-color !important;
+                }
+              }
+            }
+          }
+        }
+
+        /** 人気のイラスト */
+        #top_popular_illust_box {
+          .popular_illust_block {
+            .popular_illust_block__title {
+              background: none !important;
+              background-color: $sub-background-color !important;
+              h2 {
+                color: $main-text-color !important;
+              }
+              a {
+                color: $sub-1-text-color !important;
+              }
+            }
+
+            .popular_illust_block__itemlist {
+              .popular_illust_block__item {
+                background-color: $sub-background-color !important;
+                .popular_illust_block__item__info--title {
+                  color: $main-text-color !important;
+                }
+                .popular_illust_block__item__info--nickname {
+                  color: $sub-1-text-color !important;
+                }
+                .popular_illust_block__item__info--comment_summary {
+                  background-color: $sub2-background-color;
+                  color: $sub-2-text-color !important;
+                }
+              }
+            }
+          }
+        }
+
+        /** 人気のマンガ */
+        #top_popular_manga_box {
+          .popular_manga_block {
+            .popular_manga_block__title {
+              background: none !important;
+              background-color: $sub-background-color !important;
+              h2 {
+                color: $main-text-color !important;
+              }
+            }
+
+            .popular_manga_block__itemlist {
+              background-color: $sub-background-color !important;
+              .popular_manga_block__item {
+                background-color: $sub-background-color !important;
+                .popular_manga_block__item__info {
+                  .popular_manga_block__item__info--title {
+                    a {
+                      color: $main-text-color !important;
+                    }
+                  }
+                  .popular_manga_block__item__info--nickname {
+                    color: $sub-1-text-color !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #main_area_r {
+        #top_ads_box {
+          background-color: $sub-background-color !important;
+        }
+
+        /** 広告サイズがクラス、ID名に入っているから将来的に変わる可能性? */
+        .ads_300x60 {
+          background-color: $sub-background-color !important;
+        }
+
+        .ads_prtext {
+          ul li {
+            background-color: $sub-background-color !important;
+            a {
+              color: $sub-1-text-color;
+            }
+          }
+        }
+
+        /** イラスト定点観測 */
+        #top_personalize_box--illust {
+          .top_personalize_block {
+            background-color: $sub-background-color !important;
+            .top_personalize_block__header {
+              color: $main-text-color !important;
+            }
+          }
+        }
+
+        /** お気に入りマンガ */
+        #top_personalize_box--manga {
+          .top_personalize_block {
+            background-color: $sub-background-color !important;
+            .top_personalize_block__header {
+              color: $main-text-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

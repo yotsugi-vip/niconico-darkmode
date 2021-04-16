@@ -1,0 +1,12 @@
+.niconico-darkmode-setting-true {
+    /** パンくず */
+    .pankuzu {
+        background-color: $sub-background-color !important;
+        .sg_global_bar {
+            background-color: $sub-background-color !important;
+            a {
+                color: $sub-1-text-color !important;
+            }
+        }
+    }
+}

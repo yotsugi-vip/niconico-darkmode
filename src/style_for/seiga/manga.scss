@@ -1,0 +1,73 @@
+@import "../parts/_default";
+@import "../parts/_textarea";
+@import "../parts/_footer";
+@import "./header";
+@import "./search";
+@import "./pankuzu";
+@import "./footer";
+
+.niconico-darkmode-setting-true {
+    #main.index {
+        #mg_sub_column {
+            ul {
+                background-color: $sub-background-color !important;
+                li {
+                    background-color: $sub-background-color !important;
+                    border-color: $sub-background-color !important;
+                }
+            }
+        }
+
+        #mg_main_column {
+            /** 共通要素 */
+            .content_area {
+                .bar_title {
+                    background: none !important;
+                    background-color: $sub-background-color !important;
+                    h2 {
+                        color: $main-text-color !important;
+                    }
+                }
+                .content_area_inner {
+                    background-color: $sub-background-color !important;
+                    p,
+                    span {
+                        color: $sub-1-text-color !important;
+                    }
+                    h3 {
+                        color: $main-text-color !important;
+                    }
+                    a {
+                        color: $main-url-color !important;
+                    }
+                }
+            }
+
+            #mg_primary {
+                /** 最近コメントがついた作品 */
+                #mg_recently_commented_inner {
+                    .mg_comment {
+                        filter: invert(0.845);
+                        .mg_comment_inner {
+                            color: #000 !important;
+                        }
+                    }
+                }
+            }
+            #mg_secondary {
+                /** ランキング */
+                #mg_ranking_inner {
+                    background-color: $sub-background-color !important;
+                    .rank_title,
+                    .rank_body,
+                    .rank_user {
+                        color: $sub-1-text-color !important;
+                        a {
+                            color: $main-url-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
