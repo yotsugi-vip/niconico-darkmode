@@ -1,0 +1,9 @@
+@import "../parts/_default";
+
+.niconico-darkmode-setting-true {
+    #im_menu{
+        #im_menu_inner{
+            filter: invert(0.89);
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@import "../parts/_default";
+@import "../parts/_textarea";
+@import "../parts/_footer";
+@import "./header";
+@import "./im_menu";
+@import "./search";
+@import "./pankuzu";
+@import "./footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #main {
+        .contents_ttl {
+            filter: invert(0.89) !important;
+        }
+
+        .r {
+            .side_area_block {
+                filter: invert(0.89) !important;
+                color: #000 !important;
+            }
+
+            #save_rank {
+                filter: $invert !important;
+            }
+
+            .other_ranking_link {
+                color: $main-text-color !important;
+            }
+        }
+
+        .rank_list_outer {
+            filter: invert(0.89) !important;
+        }
+
+        .list_rank_outer {
+            background: none;
+
+            > img {
+                display: none;
+            }
+
+            &.list_rank_outer_1 table {
+                outline: dashed 2px #968014 !important;
+                margin-top: 5px !important;
+                td {
+                    background: none !important;
+                }
+            }
+
+            &.list_rank_outer_2 table {
+                outline: dashed 2px #5d7b7b !important;
+                td {
+                    background: none !important;
+                }
+            }
+
+            &.list_rank_outer_3 table {
+                outline: dashed 2px #665640 !important;
+                td {
+                    background: none !important;
+                }
+            }
+
+            &.list_rank_outer_4 table {
+                outline: dashed 2px $border-background-color !important;
+                td {
+                    background: none !important;
+                }
+            }
+
+            tbody tr {
+                td.rank_block_left {
+                    background-color: $main-background-color !important;
+                }
+
+                td.rank_list_block {
+                    background-color: $main-background-color !important;
+
+                    .rank_list_block_info {
+                        .rank_txt_nickname {
+                            a.rank_txt_user {
+                                color: $main-url-color !important;
+                            }
+                        }
+                    }
+                    .rank_list_block_comment {
+                        .rank_txt_summary {
+                            background-color: $sub-background-color !important;
+                            border-color: $border-background-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
