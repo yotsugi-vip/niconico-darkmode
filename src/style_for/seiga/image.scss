@@ -1,0 +1,280 @@
+@import "../parts/_default";
+@import "../parts/_footer";
+@import "./header";
+@import "./search";
+@import "./pankuzu";
+@import "./footer";
+
+.niconico-darkmode-setting-true {
+    #content {
+        #main {
+            #detail {
+                border-color: $border-background-color !important;
+                .detail_inner {
+                    .im_head_bar {
+                        .inner {
+                            background-color: $sub-background-color !important;
+                            border-color: $border-background-color !important;
+                            .inner_content {
+                                .created,
+                                .txt,
+                                .count_value,
+                                .title,
+                                .discription {
+                                    color: $main-text-color !important;
+                                }
+                                .illust_tag_container {
+                                    .tag_edit_link {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+                                .user {
+                                    ul li.user_link {
+                                        a {
+                                            background-color: $sub2-background-color !important;
+                                            border-color: $border-background-color !important;
+                                            color: $main-text-color !important;
+
+                                            ul li.user-name {
+                                                .caption {
+                                                    color: $sub-1-text-color !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .illust_main {
+                        border-color: $border-background-color !important;
+                        .illust_wrapper {
+                            background-color: $sub-background-color !important;
+                        }
+
+                        .illust_side {
+                            background-color: $sub-background-color !important;
+                            #ads_pc_seiga_illust_watch_east {
+                                background-color: $sub-background-color !important;
+                            }
+
+                            #ko_commentng {
+                                .ng_comment.active {
+                                    .fukidashi.right.top {
+                                        .ng_comment_inner {
+                                            background-color: $sub2-background-color !important;
+                                            .title_bar {
+                                                h3 {
+                                                    color: $main-text-color !important;
+                                                }
+                                            }
+
+                                            form label {
+                                                color: $sub-1-text-color !important;
+                                            }
+
+                                            h4 {
+                                                background-color: $sub3-background-color !important;
+                                                color: $sub-1-text-color;
+                                            }
+
+                                            ul.radio_list li {
+                                                label {
+                                                    color: $main-text-color !important;
+                                                }
+                                            }
+
+                                            .ng_comment_list {
+                                                table {
+                                                    thead tr th {
+                                                        background-color: $sub3-background-color !important;
+                                                        color: $sub-1-text-color !important;
+                                                    }
+                                                    tbody tr {
+                                                        th {
+                                                            background-color: $sub3-background-color !important;
+                                                            color: $sub-1-text-color !important;
+                                                        }
+
+                                                        td {
+                                                            &.value {
+                                                                background-color: $sub3-background-color !important;
+                                                                color: $sub-1-text-color !important;
+                                                            }
+                                                            &.delete {
+                                                                background-color: $sub3-background-color !important;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            p.comment_empty {
+                                color: $main-text-color !important;
+                            }
+
+                            #ko_comment.illust_comment {
+                                .title_bar {
+                                    h2 {
+                                        color: $main-text-color !important;
+                                    }
+
+                                    .count_comment {
+                                        color: $sub-1-text-color !important;
+                                    }
+                                }
+
+                                ul#comment_list.comment_list {
+                                    li.comment_list_item {
+                                        ul.comment_info {
+                                            background-color: $sub2-background-color !important;
+                                            border-color: $sub2-background-color !important;
+
+                                            li.data,
+                                            li.id {
+                                                color: $sub-1-text-color !important;
+                                            }
+
+                                            li.text {
+                                                color: $main-text-color !important;
+                                            }
+
+                                            li.ng_menu {
+                                                ul.ng_menu_list li {
+                                                    background-color: $sub3-background-color !important;
+                                                    color: $main-text-color !important;
+                                                }
+                                            }
+
+                                            &:after {
+                                                filter: invert(0.82);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #related_info.related_info {
+                .related_info_main {
+                    .related_box {
+                        background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
+                        #ko_watchlist_info.user {
+                            background-color: $sub-background-color !important;
+                            border-color: $border-background-color !important;
+                            ul {
+                                li.user_name a {
+                                    strong {
+                                        color: $main-text-color !important;
+                                    }
+                                    color: $sub-1-text-color !important;
+                                }
+
+                                li.user_favorite {
+                                    .favorite_count {
+                                        background-color: $sub2-background-color !important;
+                                        strong {
+                                            color: $sub-1-text-color !important;
+                                        }
+                                        color: $sub-2-text-color !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .other_illust {
+                            border-color: $border-background-color !important;
+                            h2 {
+                                color: $main-text-color !important;
+                            }
+                            .illust_list ul.item_list li.list_more_link a {
+                                color: $main-url-color !important;
+                            }
+                        }
+                    }
+                }
+
+                .sub_info_side {
+                    .feedback {
+                        background-color: $sub-background-color !important;
+                        p {
+                            color: $main-text-color !important;
+                        }
+                        ul li a {
+                            background-color: $sub2-background-color !important;
+                            background-image: none !important;
+                            border-color: $border-background-color !important;
+                            color: $main-text-color !important;
+                        }
+                    }
+
+                    .share {
+                        background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
+                    }
+
+                    .relation-contents {
+                        background-color: $sub-background-color !important;
+
+                        dt {
+                            color: $main-text-color !important;
+                        }
+
+                        dd .relation-contents__inner__item {
+                            .relation-contents__inner__item__detail {
+                                background-color: $sub-background-color !important;
+
+                                a {
+                                    color: $main-url-color !important;
+                                }
+                                .relation-contents__inner__item__detail__time {
+                                    color: $sub-1-text-color !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .ads_pc_seiga_size_east {
+                        background-color: $sub-background-color !important;
+                    }
+
+                    .portal-link {
+                        background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
+                        dl {
+                            dt {
+                                color: $main-text-color !important;
+                            }
+                            dd {
+                                ul {
+                                    li {
+                                        a {
+                                            color: $main-url-color !important;
+                                        }
+                                        &:after {
+                                            color: $main-text-color !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #ads_pc_seiga_footer {
+                background-color: $main-background-color !important;
+                border-color: $border-background-color !important;
+            }
+        }
+    }
+}

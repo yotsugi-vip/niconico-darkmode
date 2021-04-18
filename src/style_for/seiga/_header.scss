@@ -1,3 +1,5 @@
+@import "../parts/default";
+
 .niconico-darkmode-setting-true {
     #header_block {
         #header {
@@ -5,7 +7,7 @@
             background-color: $main-background-color !important;
 
             #logo img {
-                filter: invert(1) !important;
+                filter: $invert !important;
             }
 
             .sg_global_bar {
@@ -13,6 +15,11 @@
                 .sg_pankuzu li {
                     span {
                         color: $sub-1-text-color !important;
+                    }
+                }
+                #sg_global_navi_sub{
+                    a{
+                        color: $main-url-color !important;
                     }
                 }
             }
