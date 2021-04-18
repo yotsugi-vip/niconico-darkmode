@@ -385,6 +385,7 @@
             ]
         },
         {
+            "run_at": "document_start",
             "matches": [
                 "*://seiga.nicovideo.jp/*"
             ],
@@ -436,7 +437,6 @@
                 "style_for/seiga/image.css"
             ]
         }
-        
     ],
     "permissions": [
         "*://*.nicovideo.jp/",
