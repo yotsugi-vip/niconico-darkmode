@@ -1,0 +1,110 @@
+@import "../parts/_default";
+@import "../parts/_textarea";
+@import "../parts/_footer";
+@import "./header";
+@import "./pankuzu";
+@import "./footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #main {
+        #usearch_form {
+            filter: invert(0.89) !important;
+            #usearch_form_tab {
+                .tab_0,
+                .tab_1 {
+                    filter: $invert !important;
+                }
+            }
+            #usearch_form_input {
+                #head_search_form {
+                    .search_input {
+                        filter: $invert !important;
+                        background-color: $nico-black !important;
+                        color: $main-text-color !important;
+                    }
+                }
+
+                .form_result_2 {
+                    filter: $invert !important;
+                    color: $main-text-color !important;
+                    a {
+                        color: $main-url-color !important;
+                    }
+                }
+            }
+        }
+
+        .search_tab {
+            background: none !important;
+            background-color: $sub2-background-color !important;
+            border-radius: 4px 4px 0 0;
+            a {
+                color: $sub-2-text-color !important;
+            }
+            &_on {
+                background: none !important;
+                border-radius: 4px 4px 0 0;
+                background-color: $sub3-background-color !important;
+                a {
+                    color: $main-text-color !important;
+                }
+            }
+        }
+
+        #main_area_all .search_result {
+            #relation_tags_container.relation_tags.tag_list {
+                a.tag {
+                    color: $main-text-color !important;
+                }
+            }
+            .pager_txt_list {
+                .pager_inner {
+                    color: $sub-1-text-color !important;
+                    a {
+                        color: $sub-1-text-color !important;
+                    }
+                    .page_now {
+                        color: $main-text-color !important;
+                    }
+                }
+            }
+
+            .refine {
+                color: $main-text-color !important;
+                a.illust,
+                a.shunga,
+                a.total {
+                    color: $main-url-color !important;
+                    &.selected {
+                        color: $main-text-color !important;
+                    }
+                }
+            }
+
+            .illust_area {
+                .illust_pict_all.autopagerize_page_element {
+                    .illust_list_img {
+                        .illust_title p.thumb_title a {
+                            color: $main-text-color !important;
+                        }
+
+                        .summary_container {
+                            > div,
+                            .summary {
+                                border-color: $border-background-color !important;
+                                color: $sub-1-text-color !important;
+                            }
+                        }
+                        
+                        .counter_info {
+                            color: $sub-1-text-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

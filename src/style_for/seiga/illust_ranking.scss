@@ -3,7 +3,7 @@
 @import "../parts/_footer";
 @import "./header";
 @import "./im_menu";
-@import "./search";
+@import "./search_box";
 @import "./pankuzu";
 @import "./footer";
 
@@ -12,6 +12,7 @@
     color: $main-text-color !important;
 
     #main {
+        /** ランキングTOP 共通要素 */
         .contents_ttl {
             filter: invert(0.89) !important;
         }
@@ -90,6 +91,75 @@
                         .rank_txt_summary {
                             background-color: $sub-background-color !important;
                             border-color: $border-background-color !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        /** ジャンル別ランキング */
+        #rank_left_area {
+            .rank_txt_bold a {
+                color: $main-text-color !important;
+            }
+
+            div:not([class]) {
+                #save_rank {
+                    filter: invert(0.89);
+                }
+                a {
+                    color: $main-text-color !important;
+                }
+            }
+
+            .rank_sub_sel {
+                filter: invert(0.89);
+            }
+
+            .rank_left_all {
+                .list_rank_outer {
+                    .rank_list {
+                        tbody tr td {
+                            .rank_block_right_info {
+                                .rank_txt_summary {
+                                    background-color: $sub-background-color !important;
+                                    border-color: $border-background-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #rank_right_area {
+            .side_area_block {
+                filter: invert(0.89) !important;
+                .side_area_inner {
+                    color: #000 !important;
+                    .right_rank {
+                        .rank_tbl_block {
+                            .center_img {
+                                filter: $invert !important;
+                            }
+                            .right_rank_txt {
+                                filter: $invert !important;
+                                a {
+                                    color: $main-url-color !important;
+                                }
+                            }
+                        }
+                    }
+
+                    div a.more {
+                        filter: $invert !important;
+                        color: $main-url-color !important;
+                    }
+
+                    .rank_tag_txt {
+                        filter: $invert !important;
+                        a {
+                            color: $main-url-color !important;
                         }
                     }
                 }

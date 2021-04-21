@@ -426,6 +426,32 @@
         },
         {
             "matches": [
+                "*://seiga.nicovideo.jp/search/*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/search.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/tag/*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/tag.css"
+            ]
+        },
+        {
+            "matches": [
                 "*://seiga.nicovideo.jp/manga/*"
             ],
             "js": [
