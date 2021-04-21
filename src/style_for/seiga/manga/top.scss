@@ -1,10 +1,10 @@
-@import "../parts/_default";
-@import "../parts/_textarea";
-@import "../parts/_footer";
-@import "./header";
-@import "./search_box";
-@import "./pankuzu";
-@import "./footer";
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../common_parts/header";
+@import "../common_parts/search_box";
+@import "../common_parts/pankuzu";
+@import "../common_parts/footer";
 
 .niconico-darkmode-setting-true {
     #main.index {

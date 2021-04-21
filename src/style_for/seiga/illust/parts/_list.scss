@@ -1,0 +1,92 @@
+@import "../../parts/default";
+
+/* 将棋盤型リスト タグ・ユーザーページ */
+.niconico-darkmode-setting-true {
+    #content.list {
+        #side {
+            .refine {
+                h2 {
+                    color: $main-text-color !important;
+                }
+
+                ul.refine_list {
+                    li a {
+                        color: $sub-1-text-color !important;
+                        &.selected {
+                            color: $main-text-color !important;
+                        }
+                    }
+                }
+            }
+
+            .relation_tags {
+                h2 {
+                    color: $main-text-color !important;
+                }
+                ul.relation_tag_list {
+                    li.tag_large {
+                        filter: invert(0.89);
+                        .tag_txt {
+                            filter: $invert !important;
+                            color: $main-text-color !important;
+                        }
+                        .thum {
+                            filter: $invert !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        #main {
+            .controll {
+                .sort {
+                    color: $main-text-color !important;
+                    .sort_form {
+                        .dummy {
+                            background-color: $sub-background-color !important;
+                            color: $main-text-color !important;
+                        }
+                        select.reload_onchange {
+                            background-color: $sub2-background-color !important;
+                            color: $main-text-color !important;
+                        }
+                    }
+                }
+
+                ul.pager {
+                    li {
+                        &.disabled {
+                            border-color: $border-background-color !important;
+                        }
+                    }
+                }
+
+                .page_count {
+                    strong {
+                        color: $main-text-color !important;
+                    }
+                    color: $sub-1-text-color !important;
+                }
+            }
+            .illust_list {
+                ul.item_list {
+                    li.list_item a {
+                        background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
+
+                        ul.illust_info {
+                            li.title {
+                                color: $main-text-color !important;
+                            }
+
+                            li.user {
+                                color: $sub-1-text-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

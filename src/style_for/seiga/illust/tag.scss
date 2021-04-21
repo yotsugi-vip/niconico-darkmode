@@ -1,0 +1,32 @@
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../common_parts/header";
+@import "../common_parts/pankuzu";
+@import "../common_parts/footer";
+@import "./parts/list";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #ko_tagwatch.list_head_bar {
+            background-color: $sub-background-color !important;
+            border-bottom-color: $border-background-color !important;
+
+            .inner {
+                ul.list_header_nav {
+                    li.nico_article a {
+                        color: $main-text-color !important;
+                    }
+                }
+            }
+        }
+
+        #ads_pc_seiga_footer.level_ad {
+            background-color: $main-background-color !important;
+            border-color: $border-background-color !important;
+        }
+    }
+}

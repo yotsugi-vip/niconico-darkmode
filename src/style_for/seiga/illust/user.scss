@@ -1,0 +1,80 @@
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../common_parts/header";
+@import "../common_parts/search_box";
+@import "../common_parts/pankuzu";
+@import "../common_parts/footer";
+@import "./parts/list";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        section.userlist_head_bar {
+            background-color: $sub-background-color !important;
+            color: $main-text-color !important;
+
+            .inner {
+                .inner_content {
+                    .user_info {
+                        h1 a {
+                            .nickname,
+                            .suffix {
+                                color: $main-text-color !important;
+                            }
+                        }
+
+                        ul#ko_watchlist_header.list_header_nav {
+                            li.favorite.message_target {
+                                .favorite_count {
+                                    background-color: $sub-background-color !important;
+                                    border-color: $border-background-color !important;
+
+                                    strong {
+                                        color: $main-text-color !important;
+                                    }
+                                    color: $sub-1-text-color !important;
+
+                                    &::before {
+                                        border-right-color: $border-background-color !important;
+                                    }
+
+                                    &::after {
+                                        border-right-color: $sub-background-color !important;
+                                    }
+                                }
+                            }
+                            li.user_message {
+                                background-color: $sub2-background-color !important;
+                                &::after {
+                                    border-right-color: $sub2-background-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .user_nav {
+                ul {
+                    li.illust,
+                    li.live {
+                        a {
+                            color: $sub-1-text-color !important;
+                            &.selected {
+                                color: $main-text-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #ads_pc_seiga_footer.level_ad {
+            background-color: $main-background-color !important;
+            border-color: $border-background-color !important;
+        }
+    }
+}

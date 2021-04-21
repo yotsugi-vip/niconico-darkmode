@@ -408,7 +408,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/illust.css"
+                "style_for/seiga/illust/top.css"
             ]
         },
         {
@@ -421,7 +421,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/illust_ranking.css"
+                "style_for/seiga/illust/ranking.css"
             ]
         },
         {
@@ -434,7 +434,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/search.css"
+                "style_for/seiga/illust/search.css"
             ]
         },
         {
@@ -447,7 +447,20 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/tag.css"
+                "style_for/seiga/illust/tag.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/user/illust/*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/illust/user.css"
             ]
         },
         {
@@ -460,7 +473,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/manga.css"
+                "style_for/seiga/manga/top.css"
             ]
         },
         {
@@ -473,7 +486,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/image.css"
+                "style_for/seiga/illust/image.css"
             ]
         }
     ],
