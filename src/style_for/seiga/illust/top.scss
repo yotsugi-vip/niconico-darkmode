@@ -7,88 +7,115 @@
 @import "../common_parts/footer";
 
 .niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    border-color: $border-background-color !important;
+    color: $main-text-color !important;
+
     #content {
-        .popular_tag_bg {
-            background-color: $main-background-color !important;
-        }
-
-        /** お知らせ */
-        .info_box {
-            .bar_title {
-                h2 {
-                    color: $main-text-color !important;
-                    text-shadow: none !important;
-                }
+        #main {
+            .popular_tag_bg {
+                background-color: $main-background-color !important;
+                border-bottom-color: $border-background-color !important;
             }
-            .info_box_inner {
-                .info_list_wrapper {
-                    background-color: $sub-background-color !important;
-                    a {
-                        color: $main-url-color !important;
+
+            /** お知らせ */
+            .info_box {
+                border-color: $border-background-color !important;
+
+                .bar_title {
+                    h2 {
+                        color: $main-text-color !important;
+                        text-shadow: none !important;
                     }
                 }
-            }
-        }
-
-        /** 急上昇イラスト */
-        /** 新着イラスト */
-        .box {
-            .bar_title {
-                h2 {
-                    color: $main-text-color !important;
-                    text-shadow: none !important;
-                }
-            }
-            .illust_list {
-                .item_list {
-                    .list_item {
+                .info_box_inner {
+                    .info_list_wrapper {
                         background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
                         a {
-                            background-color: $sub-background-color !important;
-                            .title {
-                                color: $sub-1-text-color !important;
-                            }
-                            .user {
-                                color: $sub-2-text-color !important;
+                            color: $main-url-color !important;
+                        }
+                    }
+                }
+            }
+
+            /** 急上昇イラスト */
+            /** 新着イラスト */
+            .box {
+                border-color: $border-background-color !important;
+                .bar_title {
+                    h2 {
+                        color: $main-text-color !important;
+                        text-shadow: none !important;
+                    }
+                }
+                .illust_list {
+                    .item_list {
+                        .list_item {
+                            a {
+                                background-color: $sub-background-color !important;
+                                border-color: $border-background-color !important;
+                                .title {
+                                    color: $sub-1-text-color !important;
+                                }
+                                .user {
+                                    color: $sub-2-text-color !important;
+                                }
                             }
                         }
                     }
                 }
             }
-        }
 
-        /** 人気のイラスト */
-        .rank_box {
-            .bar_title {
-                h2 {
-                    color: $main-text-color !important;
-                    text-shadow: none !important;
-                }
-            }
-            .rank_innerbox {
-                background-color: $sub-background-color !important;
-                .create,
-                .fan,
-                .hall {
-                    .more_link {
-                        a {
-                            color: #000 !important;
+            /** 人気のイラスト */
+            .rank_box {
+                .rank_innerbox {
+                    background-color: $sub-background-color !important;
+                    border-color: $border-background-color !important;
+
+                    .create,
+                    .fan,
+                    .hall {
+                        border-color: $border-background-color !important;
+                        .more_link {
+                            a {
+                                color: #000 !important;
+                            }
                         }
                     }
                 }
             }
-        }
 
-        /** タグ一覧 */
-        .tag_list_box {
-            .bar_title {
-                h2 {
-                    color: $main-text-color !important;
-                    text-shadow: none !important;
+            /** タグ一覧 */
+            .tag_list_box {
+                .top_illust_tag {
+                    background-color: $sub-background-color !important;
+                    border-color: $border-background-color !important;
                 }
             }
-            .top_illust_tag {
-                background-color: $sub-background-color !important;
+        }
+
+        #side {
+            #illust_my_box {
+                .my_illust.my_area {
+                    background-color: $sub-background-color !important;
+                    border-color: $border-background-color !important;
+                    background: none !important;
+                    .title {
+                        h2 {
+                            text-shadow: none !important;
+                        }
+
+                        .kind_txt,
+                        .icon_illust {
+                            text-shadow: none !important;
+                        }
+                    }
+
+                    .my_area_inner {
+                        background-color: $sub2-background-color !important;
+                    }
+                }
             }
         }
     }
