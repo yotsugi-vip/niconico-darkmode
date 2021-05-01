@@ -488,6 +488,32 @@
                 "style_for/parts/header.css",
                 "style_for/seiga/illust/image.css"
             ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/comic/*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/manga/series_top.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/watch/mg*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/manga/watch.css"
+            ]
         }
     ],
     "permissions": [

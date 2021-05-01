@@ -1,0 +1,151 @@
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #main.comic {
+        #mg_sub_column {
+            #mg_official {
+                border-color: $border-background-color !important;
+                ul {
+                    background-color: $sub-background-color !important;
+                    li {
+                        border-color: $border-background-color !important;
+                    }
+                }
+            }
+        }
+
+        #mg_main_column {
+            #contents {
+                .primaries {
+                    .main_title {
+                        h1,
+                        .author h3 {
+                            color: $main-text-color !important;
+                        }
+                    }
+
+                    .regulations {
+                        background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
+
+                        .notice .message {
+                            color: $sub-1-text-color !important;
+                        }
+                        .regulation .block span {
+                            color: $sub-1-text-color !important;
+                        }
+                    }
+
+                    .info_block {
+                        background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
+
+                        .inner {
+                            background-color: $sub2-background-color !important;
+                            a {
+                                color: $main-url-color !important;
+                            }
+                        }
+                    }
+                }
+
+                .mg_work_detail {
+                    background-color: $sub-background-color !important;
+                    border-color: $border-background-color !important;
+                    a {
+                        color: $main-url-color !important;
+                    }
+
+                    dl.count_info {
+                        dt.count_info__label {
+                            color: $sub-1-text-color !important;
+                        }
+                        dd.count_info__item {
+                            color: $main-text-color !important;
+                            &::after {
+                                background-color: $border-background-color !important;
+                            }
+
+                            dl.ranking_info {
+                                dt.ranking_info__label {
+                                    color: $sub-1-text-color !important;
+                                }
+                                dd.ranking_info__item {
+                                    color: $sub-1-text-color !important;
+                                    .ranking_info__item__out,
+                                    .ranking_info__item__number {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .mg_episode_list {
+                    background-color: $sub-background-color !important;
+                    .list_navigates {
+                        .view_switch,
+                        .sort_switch {
+                            a.switch {
+                                background-color: $sub-background-color !important;
+                                border-color: $border-background-color !important;
+                            }
+                        }
+                    }
+                    #episode_list {
+                        background-color: $sub2-background-color !important;
+                        border-color: $border-background-color !important;
+                        ul li.episode_item {
+                            .episode {
+                                .description {
+                                    .title a {
+                                        color: $main-url-color !important;
+                                    }
+                                    .comment_summary {
+                                        border-color: $border-background-color !important;
+                                        background-color: $sub3-background-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .mg_author_info {
+                    background-color: $sub-background-color !important;
+                    .mg_author_inner {
+                        border-color: $border-background-color !important;
+                        background-color: $sub2-background-color;
+                        .author_list .author {
+                            .name a .author_name {
+                                color: $main-text-color !important;
+                            }
+                            .details {
+                                .profile_icon {
+                                    border-color: $border-background-color !important;
+                                }
+                                .comment {
+                                    .balloon-top {
+                                        /** 吹き出しの⊿の代替手段がない... */
+                                        img {
+                                            display: none !important;
+                                        }
+                                    }
+                                    .comment_content {
+                                        color: #000 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

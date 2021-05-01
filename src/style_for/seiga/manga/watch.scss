@@ -1,0 +1,370 @@
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../common_parts/header";
+@import "../common_parts/search_box";
+@import "../common_parts/pankuzu";
+@import "../common_parts/footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #content.watch #main {
+        #detail.vertical {
+            background-color: $main-background-color !important;
+            .detail_inner {
+                .watch_head_bar {
+                    .inner .inner_content {
+                        ul.other_info {
+                            li {
+                                color: $sub-1-text-color !important;
+                                ul {
+                                    border-color: $border-background-color !important;
+                                }
+                            }
+                        }
+                        .title h1 {
+                            .manga_title a {
+                                color: $sub-1-text-color !important;
+                            }
+                            .episode_title {
+                                color: $main-text-color !important;
+                            }
+                        }
+
+                        .description {
+                            color: $main-text-color !important;
+                        }
+
+                        .manga_tag_container .manga_tag {
+                            ul {
+                                li.tag_edit_link {
+                                    color: $sub-1-text-color !important;
+                                }
+                            }
+                        }
+                        
+                        .regulations {
+                            background-color: $sub-background-color !important;
+                            border-color: $border-background-color !important;
+    
+                            .notice .message {
+                                color: $sub-1-text-color !important;
+                            }
+                            .regulation .block span {
+                                color: $sub-1-text-color !important;
+                            }
+                        }
+
+                        .manga_info {
+                            background-color: $sub-background-color !important;
+                            border-color: $border-background-color !important;
+                            .manga_info_title {
+                                border-color: $border-background-color !important;
+                                h2 {
+                                    color: $main-text-color !important;
+                                }
+                                .comic_link a {
+                                    color: $main-url-color !important;
+                                }
+                            }
+                            dl {
+                                dt.thum {
+                                    .center_img {
+                                        a.center_img_inner {
+                                            background-color: $sub-background-color !important;
+                                            border-color: $border-background-color !important;
+                                        }
+                                    }
+                                }
+                                dd {
+                                    &.manga_title a {
+                                        color: $main-text-color !important;
+                                    }
+                                    &.user_name {
+                                        color: $main-text-color !important;
+                                        .caption {
+                                            color: $sub-2-text-color !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .episode_control_bar {
+                    border-color: $border-background-color !important;
+                    .episode_control_bar_inner .episode_navigator {
+                        border-color: $border-background-color !important;
+                        .prev,
+                        .next {
+                            border-color: $border-background-color !important;
+                            a {
+                                color: $main-text-color !important;
+                                &.disabled {
+                                    color: $sub-2-text-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .player .content_list {
+                    /* マンガ 各ページ */
+                    .pages {
+                        ul.image_container {
+                            li.page {
+                                border-color: $border-background-color !important;
+                            }
+                        }
+                    }
+
+                    /* コメントスライダー */
+                    #comment_slider {
+                        background: none !important;
+                        background-color: $sub3-background-color !important;
+                        border-color: $border-background-color !important;
+                        .dummy_handler,
+                        .ui-slider-handle {
+                            filter: $invert;
+                        }
+                    }
+
+                    /* コメントコントロール */
+                    #ko_controls {
+                        #controls.controls .inner {
+                            background-color: $sub-background-color !important;
+                            .spread_hide {
+                                ul.comment_list {
+                                    background-color: $sub2-background-color !important;
+                                    border-color: $border-background-color !important;
+                                    color: $main-text-color !important;
+
+                                    li.comment_list_item {
+                                        border-color: $border-background-color !important;
+                                    }
+                                }
+                            }
+                            .controls_area {
+                                .control_comment {
+                                    .comment_edit {
+                                        background-color: $sub-background-color !important;
+                                        border: $border-background-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    /* 前後エピソード、リンク */
+                    .after_player {
+                        .episode_navigation {
+                            .episodes {
+                                a.prev {
+                                    background-color: $sub-background-color !important;
+                                    background: none !important;
+                                    border-color: $border-background-color !important;
+                                    &.disabled {
+                                        .prev_text {
+                                            color: $sub-2-text-color !important;
+                                        }
+                                    }
+                                    .prev_text {
+                                        color: $main-text-color !important;
+                                    }
+                                    .title {
+                                        color: $main-url-color !important;
+                                    }
+                                }
+
+                                a.next {
+                                    background-color: $sub-background-color !important;
+                                    background: none !important;
+                                    border-color: $border-background-color !important;
+                                    .info_box {
+                                        .next_text {
+                                            color: $main-text-color !important;
+                                        }
+                                        .title {
+                                            color: $main-url-color !important;
+                                        }
+                                        .update {
+                                            color: $sub-1-text-color !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .favorite {
+                                background-color: $sub-background-color !important;
+                                background: none !important;
+                                border-color: $border-background-color !important;
+                            }
+                        }
+
+                        .social_block .share {
+                            background-color: $sub-background-color !important;
+                            ul.social_ui {
+                                li.shorten input {
+                                    border-color: $border-background-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .watch_bottom {
+                    background-color: $main-background-color !important;
+                    .related_info {
+                        .related_info_main {
+                            .manga_info {
+                                background-color: $sub-background-color !important;
+                                border: $border-background-color !important;
+                                dl {
+                                    dd {
+                                        &.title {
+                                            .manga_title a {
+                                                color: $main-url-color !important;
+                                            }
+                                            .manga_favorite {
+                                                .favorite_count {
+                                                    background-color: $sub-background-color !important;
+                                                    border-color: $border-background-color !important;
+
+                                                    strong {
+                                                        color: $main-text-color !important;
+                                                    }
+                                                    color: $sub-1-text-color !important;
+
+                                                    &::before {
+                                                        border-right-color: $border-background-color !important;
+                                                    }
+
+                                                    &::after {
+                                                        border-right-color: $sub-background-color !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.user_box {
+                                            ul {
+                                                li.user_name {
+                                                    .caption,
+                                                    .suffix {
+                                                        color: $sub-1-text-color !important;
+                                                    }
+                                                    .nickname {
+                                                        color: $main-text-color !important;
+                                                    }
+                                                }
+
+                                                li.user_message {
+                                                    background-color: $sub2-background-color !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            /* TODO: コメントから見るにイベントのときのみ出る物があるっぽい */
+                            /* 出版社作品の場合のみ出る */
+                            .recommend_official_box {
+                                background-color: $sub-background-color !important;
+                                border-color: $border-background-color !important;
+                                ul.recommend_official_box_inner {
+                                    li.manga_item {
+                                        .mg_title_wrapper {
+                                            a.mg_title {
+                                                color: $main-url-color !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                p.more_link {
+                                    background-color: $sub-background-color !important;
+                                    border-color: $border-background-color !important;
+                                    a {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+                            }
+
+                            /* おすすめの作品 */
+                            .recommend_box {
+                                background-color: $sub-background-color !important;
+                                border-color: $border-background-color !important;
+
+                                .bar_title {
+                                    background: none !important;
+                                    background-color: $sub-background-color !important;
+                                    border-color: $border-background-color !important;
+                                    h2 {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+
+                                ul.recommend_box_inner {
+                                    li.manga_item {
+                                        .mg_title_wrapper {
+                                            a.mg_title {
+                                                color: $main-url-color !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            /* お気に入りのマンガ */
+                            .favorite_box {
+                                background-color: $sub-background-color !important;
+                                border-color: $border-background-color !important;
+                                .bar_title {
+                                    background: none !important;
+                                    background-color: $sub-background-color !important;
+                                    border-color: $border-background-color !important;
+                                    h2 {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+
+                                ul.favorite_box_inner {
+                                    li.manga_item {
+                                        a.mg_title {
+                                            color: $main-url-color !important;
+                                        }
+                                        .latest_episode {
+                                            span {
+                                                color: $sub-1-text-color !important;
+                                            }
+                                            a {
+                                                color: $main-url-color !important;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                p.more_link {
+                                    background-color: $sub-background-color !important;
+                                    border-color: $border-background-color !important;
+                                    a {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    /* コメントを報告　マンガを報告 */
+                    .report {
+                        a {
+                            color: $sub-1-text-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
