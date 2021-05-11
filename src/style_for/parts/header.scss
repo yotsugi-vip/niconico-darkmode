@@ -99,11 +99,13 @@
       color: $main-text-color !important;
     }
 
-    .common-header-juy1p4{
+    .common-header-juy1p4,
+    .common-header-hgmb0z{
       background-color: $nico-default-bg !important;
       border-bottom: 1px solid $border-background-color !important;
     }
-    .common-header-juy1p4:nth-child(2n){
+    .common-header-juy1p4:nth-child(2n),
+    .common-header-hgmb0z:nth-child(2n){
       border-left: 1px solid $border-background-color !important;
     }
     .common-header-11j62e9{
@@ -157,7 +159,7 @@
   }
 }
 
-
+//nicodark settings
 .common-header-nicodarksetting-but:hover{
   background-color: rgb(85, 85, 85);
 }
@@ -180,12 +182,29 @@
   width: 250px !important;
   right: 0 !important;
   background: #252525 !important;
+  box-shadow: rgb(0, 0, 0 / 20%) 0px 2px 8px;
 
   .nicodark-logo{
     width: 100%;
   }
+  .nicodark-setting-version-telop{
+    color:white;
+    font-weight: bold;
+    text-align: center !important;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 1em;
+    a{
+      margin: auto auto auto 10px;
+      color: $main-url-color;
+      text-decoration: underline;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
   .nicodark-setting-menu{
-    padding: 8px 16px;
+    padding: 0px 16px 8px 16px;
 
     .nicodark-label01{
       display: flex;
@@ -238,5 +257,4 @@
     }
     
   }
-  
 }
