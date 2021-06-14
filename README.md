@@ -60,6 +60,9 @@ $ tree -L 3
 ```
 
 ## 開発への参加
+開発への参加は、GitHubWikiも同時に参照してください。
+https://github.com/AyumuNekozuki/niconico-darkmode/wiki
+
 ### 環境構築(Chrome)
 1. 最新のリポジトリをDL
 2. dockerとdocker-composeの実行環境を用意
@@ -83,11 +86,9 @@ $ tree -L 3
 MIT
 
 ## 作者
-AyumuNekozuki / [@nekozuki_dev](https://twitter.com/nekozuki_dev) / https://portfolio.nekozuki.me/
+AyumuNekozuki / [@nekozuki_dev](https://twitter.com/nekozuki_dev) 
 
 ## SpecialThanks
 [@hiyakake](https://github.com/hiyakake) 
 
----
 
-[作業メモ](memo.md)
