@@ -1,0 +1,115 @@
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../common_parts/header";
+@import "../common_parts/search_box";
+@import "../common_parts/pankuzu";
+@import "../common_parts/footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #main {
+            #mg_wrapper {
+                #mg_sort_box {
+                    background: none !important;
+                    background-color: $sub-background-color !important;
+                    select {
+                        background-color: $sub2-background-color !important;
+                        border-color: $border-background-color !important;
+                        color: $main-text-color !important;
+                    }
+                    #save_rank {
+                        background-color: $sub2-background-color !important;
+                        border-color: $border-background-color !important;
+                        color: $main-text-color !important;
+                    }
+                }
+
+                #mg_ranking_table {
+                    background: none !important;
+                    tbody {
+                        tr {
+                            th {
+                                background-color: $sub-background-color !important;
+                                border-color: $border-background-color !important;
+                            }
+
+                            td {
+                                border-color: $border-background-color !important;
+                                :not([class]) {
+                                    background-color: $sub2-background-color !important;
+                                }
+
+                                .mg_ranking_box {
+                                    background-color: $sub2-background-color !important;
+                                    .mg_ranking_inner {
+                                        background-color: $sub2-background-color !important;
+                                        .mg_txt {
+                                            color: $main-url-color !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            #mg_ranking_more {
+                                background-color: $sub2-background-color !important;
+                            }
+                        }
+                    }
+                }
+
+                #mg_ranking_main {
+                    .mg_category_ranking_box {
+                        background-color: $sub-background-color !important;
+                        border-color: $border-background-color !important;
+                        .mg_category_ranking_inner {
+                            background-color: $sub-background-color !important;
+                            border-color: $border-background-color !important;
+                            .mg_description {
+                                .mg_description_header {
+                                    .mg_date,
+                                    .mg_author {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+                                .mg_title_area {
+                                    a {
+                                        color: $main-url-color !important;
+                                    }
+                                }
+                                .mg_description_body {
+                                    .mg_go_episode a {
+                                        color: $main-text-color !important;
+                                    }
+                                    p.mg_comment {
+                                        background-color: $sub2-background-color !important;
+                                        border-color: $border-background-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // 4位以降の順位画像対応
+                    :nth-child(n + 4).mg_category_ranking_box {
+                        .mg_category_ranking_inner {
+                            .mg_thumb {
+                                .mg_ranking_icon {
+                                    filter: invert(0.85) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #ads_pc_seiga_footer {
+            background-color: $main-background-color !important;
+            border-color: $border-background-color !important;
+        }
+    }
+}
