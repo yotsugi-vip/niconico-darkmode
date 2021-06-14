@@ -364,7 +364,7 @@
         border-color: $nico-black;
         box-shadow: none;
         [class*="___primary-information-area___"]{ //枠タイトル・開始時間
-          [class*="___title___"]{ //枠タイトル
+          [class*="___title___"],[class*="___program-title___"]{ //枠タイトル, fix210511
             color: $main-text-color;
             a{
               color: inherit;
@@ -715,6 +715,16 @@
       button:hover{
         background-color: $hover-background-color !important;
       }
+    }
+  }
+}
+
+.niconico-darkmode-setting-true{ //chokaigi2021
+  [class*="___planning-event-participation-program-list-section___"]{
+    [class*="___header___"]{
+      background: $nico-white;
+      padding: 5px 10px;
+      border-radius: 5px;
     }
   }
 }
