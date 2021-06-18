@@ -15,8 +15,9 @@
       .NicorepoItem-activityCreatedAt{
         color: $sub-1-text-color;
       }
+      .NicorepoItem-activityDescription[style="color: rgb(208, 2, 27);"],
       .NicorepoItem-activityCreatedAt_new{
-        color: #d0021b;
+        color: $notice-red !important;
       }
     }
   }
@@ -61,6 +62,39 @@
       }
       a:hover{
         color: $main-url-color;
+      }
+    }
+  }
+  .TagrepoContainer{
+    header{
+      h1.TagrepoContainer-headerTagName{
+        color: $main-text-color;
+      }
+      .TagrepoContainer-headerAction{
+        .TagrepoContainer-headerActionBack{
+          color: $sub-1-text-color;
+        }
+        .TagrepoContainer-headerActionBack:hover{
+          color: $main-url-color;
+        }
+        .ThreePointMenu-button{
+          filter: $invert;
+        }
+      }
+    }
+    .TagrepoItem{
+      background-color: $nico-black;
+      border-color: $border-background-color;
+      .TagrepoItem-headerSender,.TagrepoItem-contentTitle{
+        color: $main-text-color;
+      }
+      .TagrepoItem-contentTitle:visited{
+        color: $sub-1-text-color;
+      }
+      .TagrepoItem-contentTagsItem{
+        border-color: $sub2-background-color;
+        background: $sub2-background-color;
+        color: $sub-1-text-color;
       }
     }
   }
