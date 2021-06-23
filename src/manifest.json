@@ -427,7 +427,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/illust/search.css"
+                "style_for/seiga/search.css"
             ]
         },
         {
@@ -440,7 +440,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/illust/tag.css"
+                "style_for/seiga/tag.css"
             ]
         },
         {
@@ -453,7 +453,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/illust/user.css"
+                "style_for/seiga/user/illust.css"
             ]
         },
         {
@@ -479,7 +479,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/illust/image.css"
+                "style_for/seiga/seiga/im.css"
             ]
         },
         {
@@ -492,7 +492,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/manga/series_top.css"
+                "style_for/seiga/comic.css"
             ]
         },
         {
@@ -505,7 +505,7 @@
             ],
             "css": [
                 "style_for/parts/header.css",
-                "style_for/seiga/manga/watch.css"
+                "style_for/seiga/watch/mg.css"
             ]
         },
         {

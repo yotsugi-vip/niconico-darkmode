@@ -1,9 +1,10 @@
-@import "../../parts/_default";
-@import "../../parts/_textarea";
-@import "../../parts/_footer";
-@import "../common_parts/header";
-@import "../common_parts/pankuzu";
-@import "../common_parts/footer";
+// 静画 検索結果
+@import "../parts/default";
+@import "../parts/_textarea";
+@import "../parts/_footer";
+@import "./parts/header";
+@import "./parts/pankuzu";
+@import "./parts/footer";
 
 .niconico-darkmode-setting-true {
     background-color: $main-background-color !important;

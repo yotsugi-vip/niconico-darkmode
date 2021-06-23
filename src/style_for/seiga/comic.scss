@@ -1,6 +1,7 @@
-@import "../../parts/_default";
-@import "../../parts/_textarea";
-@import "../../parts/_footer";
+// マンガの作品TOP
+@import "../parts/_default";
+@import "../parts/_textarea";
+@import "../parts/_footer";
 
 .niconico-darkmode-setting-true {
     background-color: $main-background-color !important;

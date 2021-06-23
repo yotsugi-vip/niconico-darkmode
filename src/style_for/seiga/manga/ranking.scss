@@ -1,10 +1,11 @@
+// マンガ ランキング
 @import "../../parts/_default";
 @import "../../parts/_textarea";
 @import "../../parts/_footer";
-@import "../common_parts/header";
-@import "../common_parts/search_box";
-@import "../common_parts/pankuzu";
-@import "../common_parts/footer";
+@import "../parts/header";
+@import "../parts/search_box";
+@import "../parts/pankuzu";
+@import "../parts/footer";
 
 .niconico-darkmode-setting-true {
     background-color: $main-background-color !important;
