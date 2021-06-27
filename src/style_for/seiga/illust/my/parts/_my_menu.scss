@@ -1,0 +1,78 @@
+@import "../../../../parts/default";
+
+.niconico-darkmode-setting-true {
+    #my_menu {
+        #my_menu_mypages {
+            #my_menu_mypages_select {
+                background-color: $sub2-background-color !important;
+                color: $main-text-color !important;
+            }
+        }
+
+        #my_menu_main {
+            background-color: $sub2-background-color !important;
+            border-color: $border-background-color !important;
+            color: $main-text-color !important;
+
+            #my_menu_profile {
+                #my_menu_profile_box {
+                    tbody {
+                        tr {
+                            td.my_menu_profile_commands {
+                                background-color: $sub2-background-color !important;
+                                .my_menu_profile_command_sub {
+                                    a {
+                                        border-top-color: $border-background-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #my_menu_services {
+                .my_menu_item {
+                    :hover {
+                        background-color: $sub3-background-color !important;
+                    }
+
+                    .my_menu_item_clip,
+                    .my_menu_item_manga_bought,
+                    .my_menu_item_book_bought {
+                        color: $main-text-color !important;
+                        &.selected {
+                            background-color: $sub3-background-color !important;
+                        }
+                    }
+                }
+
+                .my_menu_clipgroup {
+                    .my_menu_clipgroup_counter {
+                        color: black !important;
+                    }
+                }
+
+                .my_menu_clipgroup_list {
+                    ul li.clip_item {
+                        a {
+                            color: $main-text-color !important;
+                        }
+                    }
+                    .my_menu_clipgroup_command {
+                        a {
+                            color: $main-url-color !important;
+                        }
+                    }
+                }
+            }
+
+            .my_menu_profile_ext {
+                background-color: $sub3-background-color !important;
+                a {
+                    color: $main-url-color !important;
+                }
+            }
+        }
+    }
+}

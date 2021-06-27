@@ -1,1 +1,72 @@
 // イラスト マイページ クリップ
+@import "../../../parts/default";
+@import "./parts/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #my_main_r {
+        #my_clip {
+            #clip_area {
+                #clip_info {
+                    .title {
+                        .title_text {
+                            color: $main-text-color !important;
+                            a {
+                                color: $main-text-color !important;
+                            }
+                        }
+                    }
+                    .clip_status {
+                        &.public {
+                            color: $main-text-color !important;
+                        }
+                        &.private {
+                            color: #f00 !important;
+                        }
+                    }
+                    .command a {
+                        color: $main-url-color !important;
+                    }
+                }
+
+                #group_select {
+                    background-color: $sub2-background-color !important;
+                    color: $main-text-color !important;
+                }
+
+                .check_helper a {
+                    color: $main-url-color !important;
+                }
+
+                .list_body {
+                    #clip_image_list {
+                        div {
+                            // リスト表示
+                            .illust_box_li {
+                                div {
+                                    div a.clip_count {
+                                        color: $main-url-color !important;
+                                    }
+                                    .text_ttl a {
+                                        color: $main-text-color !important;
+                                    }
+                                }
+                            }
+
+                            // 囲碁盤表示時の画像ボーダー指定
+                            .illust_list_img {
+                                .center_img {
+                                    .center_img_inner {
+                                        border-color: $border-background-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

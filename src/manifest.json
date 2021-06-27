@@ -520,6 +520,19 @@
                 "style_for/parts/header.css",
                 "style_for/seiga/manga/ranking.css"
             ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/my/clip*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/illust/my/clip.css"
+            ]
         }
     ],
     "permissions": [
