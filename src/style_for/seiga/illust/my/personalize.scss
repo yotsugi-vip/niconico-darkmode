@@ -1,2 +1,59 @@
 // マイページ マイページ 定点観測
 @import "./parts/my_menu";
+@import "../../../parts/default";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+    #my_main_r {
+        #my_personalize.my_contents {
+            .my_contents_header {
+                .watch_tags {
+                    tbody tr td {
+                        .illust_h_tag {
+                            nobr a {
+                                &.tag {
+                                    color: $main-text-color !important;
+                                }
+                                &.link_red {
+                                    color: $main-url-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .watch_users a {
+                    color: $main-url-color !important;
+                }
+            }
+
+            .list {
+                .list_options {
+                    .personalize_trigger a {
+                        color: $main-url-color !important;
+                        &.selected {
+                            color: $main-text-color !important;
+                        }
+                    }
+                }
+
+                .list_body {
+                    .illust_thumb {
+                        .illust_info {
+                            .info_title a {
+                                color: $main-url-color !important;
+                            }
+                            .info_source a {
+                                &.user_name,
+                                &.tag {
+                                    color: $main-url-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
