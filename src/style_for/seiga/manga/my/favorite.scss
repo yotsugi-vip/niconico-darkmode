@@ -1,1 +1,55 @@
 // マンガ マイページ お気に入り
+@import "../../../parts/default";
+@import "../../parts/my/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        background-color: $main-background-color !important;
+
+        #my_main #my_main_r {
+            #my_favorite.my_contents {
+                .message {
+                    .filter .sort_form .sort_form_inner {
+                        #sort {
+                            background-color: $sub2-background-color !important;
+                            color: $main-text-color !important;
+                        }
+                    }
+                }
+
+                ul.favorite_list {
+                    li {
+                        .content_icon {
+                            .center_img {
+                                .center_img_inner {
+                                    border-color: $border-background-color !important;
+                                }
+                            }
+                        }
+
+                        .description {
+                            .content_title {
+                                .title a {
+                                    color: $main-url-color !important;
+                                }
+                            }
+                            .latest_episode a {
+                                color: $main-url-color !important;
+                            }
+                            .bookmark_info_wrapper {
+                                .bookmark_info.unread {
+                                    a.bookmark_link{
+                                        color: $main-url-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

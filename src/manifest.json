@@ -546,6 +546,32 @@
                 "style_for/parts/header.css",
                 "style_for/seiga/illust/my/personalize.css"
             ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/manga/my/favorite*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/manga/my/favorite.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/manga/my/bought*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/manga/my/bought.css"
+            ]
         }
     ],
     "permissions": [
