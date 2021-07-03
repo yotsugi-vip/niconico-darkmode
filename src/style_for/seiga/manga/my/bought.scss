@@ -7,7 +7,52 @@
     color: $main-text-color !important;
 
     #wrapper {
-        background-color: $main-background-color !important;        
+        background-color: $main-background-color !important;
+        #my_main_r {
+            #mg_article.my_contents {
+                #manga_list_container {
+                    ul.mg_bought_history {
+                        li.history_item {
+                            .mg_thumb {
+                                .center_img {
+                                    a.center_img_inner {
+                                        border-color: $border-background-color !important;
+                                    }
+                                }
+                            }
+                            ul.mg_info {
+                                li {
+                                    &.episode_title a {
+                                        color: $main-url-color !important;
+                                    }
+                                    &.content_title {
+                                        .center_img a.center_img_inner {
+                                            border-color: $border-background-color !important;
+                                        }
+                                        a:not([class]) {
+                                            color: $main-url-color !important;
+                                        }
+                                    }
+                                }
+                            }
+                            .ppv_status {
+                                .ppv_price_history {
+                                    background-color: $sub2-background-color !important;
+                                    border-color: $border-background-color !important;
+                                    color: $main-text-color !important;
+                                    p {
+                                        .ppv_length {
+                                            .indefinite {
+                                                color: $main-text-color !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
 }
