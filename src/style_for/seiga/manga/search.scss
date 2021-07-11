@@ -1,0 +1,67 @@
+// マンガ ランキング
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../parts/header";
+@import "../parts/search_box";
+@import "../parts/pankuzu";
+@import "../parts/footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        background-color: $main-background-color !important;
+        color: $main-text-color !important;
+
+        #main {
+            #mg_wrapper {
+                .manga_search_wrapper {
+                    .header {
+                        .header__result-summary {
+                            color: $main-text-color !important;
+                            .header__result-summary__query-string {
+                                color: $main-text-color !important;
+                            }
+                        }
+                        .header__sort {
+                            .header__sort__selector {
+                                color: $main-text-color !important;
+                                .sort_form {
+                                    .sort_form_inner {
+                                        select#sort.reload_onchange {
+                                            background-color: $main-background-color !important;
+                                            color: $main-text-color !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .body{
+                        .search_result{
+                            .search_result__item{
+                                .search_result__item__info{
+                                    .search_result__item__info--title a{
+                                        color: $main-text-color !important;
+                                    }
+                                    .search_result__item__info--author{
+                                        color: $main-text-color !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footer{
+                        .footer__pager{
+                            .footer__pager__summary{
+                                color: $main-text-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
