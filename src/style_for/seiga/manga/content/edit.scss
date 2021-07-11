@@ -1,0 +1,108 @@
+// マンガ 作品管理ページ
+@import "../../../parts/default";
+@import "../../parts/my/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #main {
+            #mg_wrapper {
+                #mg_titleArea {
+                    ul li a {
+                        color: $main-url-color !important;
+                    }
+                }
+
+                div:not([class]) {
+                    div:not([class]) {
+                        a#mg_content_delete {
+                            color: $main-url-color !important;
+                        }
+                    }
+                }
+
+                #mg_work_edit.mg_element_box {
+                    #content_edit {
+                        #mg_message {
+                            background-color: $sub-background-color !important;
+                        }
+
+                        form {
+                            #mg_form.mg_element_box {
+                                table.mg_form_tbl {
+                                    tbody {
+                                        tr {
+                                            th .gift_help_link a {
+                                                color: $main-url-color !important;
+                                            }
+                                            
+                                            td.mg_bg_gray {
+                                                background-color: $sub-background-color !important;
+                                                a {
+                                                    color: $main-url-color !important;
+                                                }
+                                            }
+                                            td.mg_item {
+                                                .mg_gray_txt {
+                                                    color: $main-text-color !important;
+                                                    a {
+                                                        color: $main-url-color !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div.float_l {
+                        div {
+                            .float_l.mg_work_title {
+                                color: $main-text-color !important;
+                                a {
+                                    color: $main-url-color !important;
+                                }
+                                div a.category {
+                                    color: $main-url-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #mg_ep_view.mg_element_box {
+                    .sort_form {
+                        .sort_form_inner {
+                            select#sort.reload_onchange {
+                                color: $main-text-color !important;
+                                background-color: $sub-background-color !important;
+                            }
+                        }
+                    }
+
+                    #mg_episode_window {
+                        .mg_window {
+                            table#sortable {
+                                tbody.ui-sortable {
+                                    tr.sort_item {
+                                        td.episode_info_cell {
+                                            h4 a {
+                                                .theme_title {
+                                                    color: $main-url-color !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

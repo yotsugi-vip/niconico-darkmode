@@ -1,0 +1,24 @@
+@import "../parts/my/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    border-color: $border-background-color !important;
+    color: $main-text-color !important;
+    #wrapper {
+        #main {
+            #my_main {
+                #my_main_r {
+                    .my-top__section-wrapper {
+                        .my-top__section{
+                            .my-top__section__item-container{
+                                a.my-top__section__item{
+                                    color: $main-text-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+// マンガ エピソード編集
+@import "../../../parts/default";
+@import "../../parts/my/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #main {
+            #mg_wrapper {
+                #mg_titleArea {
+                    border-bottom-color: $border-background-color !important;
+                    h2 {
+                        color: $main-text-color !important;
+                    }
+                    ul li a {
+                        color: $main-url-color !important;
+                    }
+                }
+
+                #mg_edit_ep {
+                    h3 span a {
+                        color: $main-url-color !important;
+                    }
+
+                    div {
+                        form#episode_edit_form {
+                            #mg_open_edit {
+                                #mg_form {
+                                    table.mg_form_tbl {
+                                        tbody tr {
+                                            td.mg_item {
+                                                .mg_gray_txt {
+                                                    color: $main-text-color !important;
+                                                }
+                                            }
+                                            td.mg_bg_gray {
+                                                background-color: $sub-background-color !important;
+                                                a {
+                                                    color: $main-url-color !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

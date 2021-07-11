@@ -1,0 +1,18 @@
+// マンガ コメント編集
+@import "../../../parts/default";
+@import "../../parts/my/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #main {
+            div {
+                a {
+                    color: $main-url-color !important;
+                }
+            }
+        }
+    }
+}

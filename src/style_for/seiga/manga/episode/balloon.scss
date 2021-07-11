@@ -1,0 +1,38 @@
+// マンガ コメント位置編集
+@import "../../../parts/default";
+@import "../../parts/my/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #content {
+            #main {
+                #detail {
+                    background-color: $main-background-color !important;
+                    .detail_inner {
+                        .player.vertical {
+                            .content_list {
+                                .show_balloon {
+                                    .balloon_editor {
+                                        table tbody tr td .controls {
+                                            .comment_controls.controls_area {
+                                                background-color: $sub-background-color !important;
+                                                border-color: $border-background-color !important;
+                                                .comment_table {
+                                                    background-color: $sub-background-color !important;
+                                                    color: $main-text-color !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+// マイページ マイページ 投稿イラスト
+@import "../parts/my/my_menu";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    border-color: $border-background-color !important;
+    color: $main-text-color !important;
+    #wrapper {
+        #main {
+            #my_main {
+                #my_main_r {
+                    #my_illust.my_contents_container {
+                        .title {
+                            border-bottom-color: $border-background-color !important;
+                        }
+                        .my_contents_list.my_illust {
+                            .my_contents_list_header {
+                                .sort_form {
+                                    .sort_form_inner {
+                                        select.reload_onchange {
+                                            color: $main-text-color !important;
+                                            background-color: $sub2-background-color !important;
+                                            border-color: $border-background-color !important;
+                                        }
+                                    }
+                                }
+                            }
+                            .my_contents_list_body {
+                                .list_box_illust {
+                                    .info_area {
+                                        .text_ttl {
+                                            a {
+                                                color: $main-text-color !important;
+                                            }
+                                        }        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

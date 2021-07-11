@@ -1,0 +1,58 @@
+// マンガ ランキング
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../parts/header";
+@import "../parts/search_box";
+@import "../parts/pankuzu";
+@import "../parts/footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #mainArea {
+            #main {
+                #mg_titleArea {
+                    border-bottom-color: $border-background-color !important;
+                    ul li a {
+                        color: $main-url-color !important;
+                    }
+                }
+                #mg_manga_list.mg_element_box {
+                    .sort_form {
+                        .sort_form_inner {
+                            select {
+                                color: $main-text-color !important;
+                                background-color: $sub2-background-color !important;
+                            }
+                        }
+                    }
+                    .filter {
+                        a {
+                            color: $main-url-color !important;
+                        }
+                    }
+                    ul {
+                        li.mg_list_box {
+                            .mg_content_box {
+                                .mg_manga_box {
+                                    .mg_description {
+                                        .mg_edit_content_link {
+                                            color: $main-url-color !important;
+                                        }
+                                        .mg_date,
+                                        .mg_meta {
+                                            color: $main-text-color !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
