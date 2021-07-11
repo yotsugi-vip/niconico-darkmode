@@ -25,10 +25,57 @@
 
             #mg_main_column {
                 #main_title {
+                    .category {
+                        color: $main-text-color !important;
+                    }
                     .number {
                         color: $main-text-color !important;
                     }
                 }
+
+                /* クエリuser_idがあるとき表示 */
+                .mg_author_info {
+                    background-color: $sub2-background-color !important;
+                    .mg_author_inner.inner {
+                        background-color: $sub3-background-color !important;
+                        .author_list {
+                            .author {
+                                .profile_icon img {
+                                    border-color: $border-background-color !important;
+                                }
+                                .info_text {
+                                    .details {
+                                        .author_info {
+                                            .name a {
+                                                color: $main-url-color !important;
+                                            }
+                                        }
+                                        .favorite_bookmark a {
+                                            color: $main-url-color !important;
+                                        }
+                                    }
+                                    .comment {
+                                        .balloon-top {
+                                            img {
+                                                display: none;
+                                            }
+                                            &::before {
+                                                content: "" !important;
+                                                font-size: 0 !important;
+                                                border: 5px solid transparent !important;
+                                                border-right: 5px solid #c8dcf1 !important;
+                                            }
+                                        }
+                                        .comment_content {
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 div:not([class]) {
                     .navigator {
                         div .sort_form {
