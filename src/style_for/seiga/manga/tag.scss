@@ -1,0 +1,98 @@
+// マンガ タグ検索結果
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../parts/header";
+@import "../parts/search_box";
+@import "../parts/pankuzu";
+@import "../parts/footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+
+    #wrapper {
+        #main.list {
+            #mg_sub_column {
+                ul {
+                    background-color: $sub-background-color !important;
+                    li {
+                        background-color: $sub-background-color !important;
+                        border-color: $sub-background-color !important;
+                    }
+                }
+            }
+
+            #mg_main_column {
+                #main_title {
+                    .number {
+                        color: $main-text-color !important;
+                    }
+                }
+                div:not([class]) {
+                    .navigator {
+                        div .sort_form {
+                            .sort_form_inner {
+                                select#sort.reload_onchange {
+                                    background-color: $sub-background-color !important;
+                                    color: $main-text-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                #comic_list.list {
+                    ul li.mg_item.item {
+                        .mg_date.dates {
+                            color: $main-text-color !important;
+                        }
+                    }
+
+                    .item_container {
+                        .mg_icon.tile_only a {
+                            color: $main-url-color !important;
+                        }
+
+                        .episode_info {
+                            background-color: $sub2-background-color;
+                            color: $main-url-color !important;
+                            .thumb_img {
+                                border-color: $border-background-color !important;
+                            }
+                            .episode_links {
+                                .mg_link_first a {
+                                    color: $main-text-color !important;
+                                }
+                            }
+                        }
+                        .mg_description.description {
+                            .description_block {
+                                .mg_title {
+                                    .mg_body {
+                                        .title a {
+                                            color: $main-url-color !important;
+                                        }
+                                        .description {
+                                            color: $main-text-color !important;
+                                        }
+                                    }
+                                    .mg_description_header {
+                                        .mg_icon a {
+                                            color: $main-url-color !important;
+                                        }
+                                        .mg_author {
+                                            color: $main-text-color !important;
+                                            a {
+                                                color: $main-url-color !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
