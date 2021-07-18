@@ -1,0 +1,71 @@
+// 公開クリップ
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../parts/header";
+@import "../parts/im_menu";
+@import "../parts/search_box";
+@import "../parts/pankuzu";
+@import "../parts/footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+    #wrapper {
+        #main {
+            .clip_block_outer {
+                filter: invert(0.89);
+                #clip_info.clip_info_block {
+                    .clip_public_info {
+                        color: #000 !important;
+                        a.fc_blk {
+                            color: #000 !important;
+                        }
+                    }
+                    .ttl_text a,
+                    .fc_gry {
+                        color: #000 !important;
+                    }
+                }
+            }
+
+            .pager_txt_list {
+                .pager_inner {
+                    color: $main-text-color !important;
+                    .page_now {
+                        color: $main-text-color !important;
+                    }
+                    span a {
+                        color: $main-url-color !important;
+                    }
+                }
+            }
+
+            .autopagerize_page_element {
+                // リスト表示
+                div {
+                    .illust_box_li {
+                        div {
+                            color: $main-text-color !important;
+                            a {
+                                color: $main-url-color !important;
+                            }
+                            .text_ttl a {
+                                color: $main-text-color !important;
+                            }
+                        }
+                    }
+                }
+
+                // ボックス表示
+                div {
+                    .illust_title {
+                        p.thumb_title a {
+                            color: $main-text-color !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

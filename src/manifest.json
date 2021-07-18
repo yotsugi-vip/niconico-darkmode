@@ -699,6 +699,45 @@
                 "style_for/parts/header.css",
                 "style_for/seiga/manga/list.css"
             ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/clip/list*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/clip/list.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/clip/*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/clip/public.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://seiga.nicovideo.jp/clip/list/im*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/main.js"
+            ],
+            "css": [
+                "style_for/parts/header.css",
+                "style_for/seiga/clip/list/im.css"
+            ]
         }
     ],
     "permissions": [

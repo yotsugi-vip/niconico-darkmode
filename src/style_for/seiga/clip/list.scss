@@ -1,0 +1,62 @@
+// 公開クリップ一覧
+@import "../../parts/_default";
+@import "../../parts/_textarea";
+@import "../../parts/_footer";
+@import "../parts/header";
+@import "../parts/im_menu";
+@import "../parts/search_box";
+@import "../parts/pankuzu";
+@import "../parts/footer";
+
+.niconico-darkmode-setting-true {
+    background-color: $main-background-color !important;
+    color: $main-text-color !important;
+    #wrapper {
+        #main {
+            .contents_ttl img {
+                filter: invert(0.89);
+            }
+
+            .sort_box {
+                .sort_form {
+                    .sort_form_inner {
+                        select {
+                            background-color: $sub-background-color !important;
+                            color: $main-text-color !important;
+                        }
+                    }
+                }
+            }
+
+            .pager_txt_list {
+                .pager_inner {
+                    color: $main-text-color !important;
+                    .page_now {
+                        color: $main-text-color !important;
+                    }
+                    span a {
+                        color: $main-url-color !important;
+                    }
+                }
+            }
+
+            .clip_group_list {
+                .clip_block {
+                    table.clip_open_list {
+                        tbody {
+                            tr {
+                                td.clip_open_text {
+                                    .clip_ttl {
+                                        .bold a {
+                                            color: $main-text-color !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
