@@ -4,6 +4,8 @@
 @import '../parts/_dropdown';
 @import 'parts/_parts';
 
+@import 'extention/_nicoadex';
+
 .niconico-darkmode-setting-true{
   background-color: $main-background-color;
   #root>[class*="___page___"]{
@@ -45,8 +47,8 @@
                 }
               }
               [class*="___broadcast-participation-area___"]{ //新市場・コメント入力
-                background-color: black;
-                border-color: black;
+                background-color: $player-black;
+                border-color: $player-black;
                 [class*="___comment-post-panel___"]{ //コメント入力欄
                   [class*="___command-tool___"]{ //コマンド
                     [class*="___command-palette___"]{ //コマンドパレット
@@ -154,7 +156,7 @@
               }
             }
           }
-          [class*="___player-status___"]{ //ステータス・コメント・おすすめ
+          [class*="___player-status-panel___"]{ //ステータス・コメント・おすすめ
             background-color: $main-background-color;
             border-color: $main-background-color;
             [class*="___program-information-panel___"]{ //ステータス
@@ -247,12 +249,13 @@
                   [class*="___table-row___"][data-comment-type="operator"]{ //運営コメント
                     [class*="___table-cell___"]{
                       [class*="___comment-text___"]{ //コメント
-                        color: red;
+                        color: $notice-red;
+                        font-weight: bold;
                       }
                     }
                   }
                   [class*="___table-row___"]:hover{ //ホバー時
-                    background-color: $hover-background-color;
+                    background-color: $sub2-background-color;
                   }
                 }
                 [class*="___comment-context-menu___"]{
@@ -286,6 +289,16 @@
                     background-color: $hover-background-color;
                   }
                 }
+              }
+            }
+            [class*="___promotion-panel___"]{ //運営info
+              border-color: $border-background-color;
+              background-color: $main-background-color;
+              [class*="___message-anchor___"] > span{
+                color: $sub-1-text-color;
+              }
+              [class*="___message-anchor___"]:hover > span{
+                color: $main-url-color;
               }
             }
             [class*="___ng-panel___"]{ //NG設定パネル
@@ -391,9 +404,13 @@
             }
           }
           [class*="___program-label-view___"][data-provider-type="community"]{ //コミュラベル
-            [class*="___limited-program-label___"]{
+            [class*="___limited-program-label___"]{ //コミュ限
               border-color: $nico-com;
               color: $nico-com;
+            }
+            [class*="___video-premiere-label___"]{ //ライブ公開
+              border-color: $sub-1-text-color;
+              color: $sub-1-text-color;
             }
           }
           [class*="___program-label-view___"]{ //有料生放送
@@ -404,21 +421,24 @@
           }
         }
         [class*="___menu-dock___"]{ //Share
-          [class*="___popup-toggle-button___"]{
+          [class*="___extra-popup-control___"],
+          [class*="___allegation-popup-control___"]{
             filter: $invert;
-          }
-          [class*="___list___"]{
-            background-color: $nico-black;
-            border-color: $border-background-color;
-            [class*="___item___"]{
-              a{
-                color: $main-text-color;
-              }
-              a:hover{
-                background-color: $hover-background-color;
-              }
-            } 
             
+            [class*="___target___"]{
+              background-color: $nico-black;
+              border-color: $border-background-color;
+              [class*="___item___"]{
+                a{
+                  color: $main-text-color;
+                  background-color: $nico-black;
+                  border-color: $border-background-color;
+                }
+                a:hover{
+                  background-color: $hover-background-color;
+                }
+              }
+            }
           }
         }
         [class*="___user-summary___"],
@@ -523,6 +543,27 @@
               }
             }
           }
+          [class*="___video-premiere-content-section___"]{ //ライブ公開
+            background: $nico-black;
+            [class*="___header___"]{
+              [class*="___heading___"]{
+                color: $sub-1-text-color;
+              }
+            }
+            [class*="___body-area___"]{
+              [class*="___preview___"]{
+                background: none;
+              }
+              [class*="___content-area___"]{
+                [class*="___content-title___"]{
+                  color: $main-url-color;
+                  &:hover{
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
           [class*="___description___"]{
             color: $main-text-color;
             [style*="background"]{
@@ -619,10 +660,32 @@
 
       }
       [class*="___program-information-side-area___"]{ //右側
-        [class*="___konomi-tag-list-section___"]{ //好みタグ
-          [class*="___heading___"]{
-            color: $main-text-color;
+        [class*="___broadcaster-information-section___"]{ //コミュ/CH
+          [class*="___profile___"]{
+            color: $sub-2-text-color;
           }
+          [class*="___description-area___"]{
+            [class*="___name-area___"]{
+              [class*="___lead___"]{
+                color: $sub-1-text-color;
+              }
+              [class*="___name-label___"]{
+                color: $main-text-color;
+                &:hover{
+                  color: $main-url-color;
+                }
+              }
+            }
+          }
+        }
+        [class*="___konomi-tag-list-section___"]{ //好みタグ
+          border-color: $border-background-color;
+          [class*="___header___"]{
+            border-color: $border-background-color;
+            [class*="___heading___"]{
+              color: $main-text-color;
+            }
+          } 
           [class*="___setting-button___"]{
             svg>path{
               fill: $main-text-color;

@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "niconico Darkmode",
-    "version": "2.3.0",
+    "version": "2.3.6",
     "description": "ニコニコサイトをダークモード化する拡張機能",
     "icons": {
         "16": "images/icon16.png",
@@ -18,7 +18,8 @@
                 "*://live2.nicovideo.jp/*",
                 "*://site.live.nicovideo.jp/*",
                 "*://commons.nicovideo.jp/*",
-                "*://inform.nicovideo.jp/oshirase/*"
+                "*://inform.nicovideo.jp/oshirase/*",
+                "*://site.nicovideo.jp/service_list/*"
             ],
             "js": [
                 "js/jquery-3.5.1.min.js",
@@ -34,8 +35,13 @@
                 "*://live.nicovideo.jp/*",
                 "*://live2.nicovideo.jp/*"
             ],
-            "js":["js/jquery-3.5.1.min.js","js/maintenance.js"],
-            "css":["style_for/parts/maintenance.css"],
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/maintenance.js"
+            ],
+            "css": [
+                "style_for/parts/maintenance.css"
+            ],
             "run_at": "document_start"
         },
         {
@@ -53,11 +59,14 @@
             "matches": [
                 "*://commons.nicovideo.jp/cpp/private/receipt/*"
             ],
-            "js":["js/jquery-3.5.1.min.js","js/darkmode_canceler.js"]
+            "js": [
+                "js/jquery-3.5.1.min.js",
+                "js/darkmode_canceler.js"
+            ]
         },
         {
             "matches": [
-                "*://live.nicovideo.jp/embed/watch-histories/*"
+                "*://live.nicovideo.jp/embed/watch-histories*"
             ],
             "js": [
                 "js/jquery-3.5.1.min.js",
@@ -128,7 +137,7 @@
                 "*://www.nicovideo.jp/feedback?*"
             ],
             "css": [
-                "style_for/video/feedback.css"
+                "style_for/top/feedback.css"
             ]
         },
         {
@@ -520,10 +529,18 @@
                 "style_for/parts/header.css",
                 "style_for/seiga/manga/ranking.css"
             ]
+        },
+        {
+            "matches": [
+                "*://site.nicovideo.jp/service_list/*"
+            ],
+            "css": [
+                "style_for/site/service_list.css"
+            ]
         }
     ],
     "permissions": [
-        "*://*.nicovideo.jp/",
-        "storage"
+        "storage",
+        "*://*.nicovideo.jp/"
     ]
 }
